@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace LibraryProject.Models.Entities.Concretes
 {
-    public class Category :BaseEntity
+    public class Faculty : BaseEntity
     {
         public string Name { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
     }
 }

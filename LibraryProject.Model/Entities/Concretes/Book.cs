@@ -20,10 +20,13 @@ namespace LibraryProject.Models.Entities.Concretes
         public int Quantity  { get; set; }
 
 
+        public virtual Author IdAuthorNavigation { get; set; } = null!;
 
-        public virtual Author IdAuthorsNavigation { get; set; } = null!;
         public virtual Category IdCategoryNavigation { get; set; } = null!;
 
+        public virtual Press IdPressNavigation { get; set; } = null!;
+
+        public virtual Theme IdThemesNavigation { get; set; } = null!;
 
     }
 }

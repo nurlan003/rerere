@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace LibraryProject.Models.Entities.Concretes
 {
-    public class Category :BaseEntity
+    public class Teacher : BaseEntity
     {
-        public string Name { get; set; }
-        public virtual ICollection<Book> Books { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int DepId { get; set; }
+
     }
 }

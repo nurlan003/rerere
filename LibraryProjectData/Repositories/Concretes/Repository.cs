@@ -38,21 +38,27 @@ namespace LibraryProject.Data.Repositories.Concretes
             return _dbset.ToList();
         }
 
-        public T GetById(int Id)
+        public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return (T)_dbset.FirstOrDefault();
         }
 
         public void Remove(T entity)
         {
+            if (entity == null) throw new ArgumentNullException("Data is null");
+            _dbset.Remove(entity);
         }
 
         public void SaveChange()
         {
+            _context.SaveChanges();
         }
 
         public void Update(T entity)
         {
+            if (entity == null) { throw new ArgumentNullException("entity", "Entity is null"); }
+
+            _dbset.Update(entity);
         }
     }
 }
