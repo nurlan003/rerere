@@ -7,7 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="215,137,0,0" VerticalAlignment="Top" Height="103" Width="233" Click="Button_Click"/>
+        <Button Content="Add Category" HorizontalAlignment="Left" Margin="34,41,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click"/>
+        <Button Content="Add Author" HorizontalAlignment="Left" Margin="34,225,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_1" />
+        <Button Content="Add Book" HorizontalAlignment="Left" Margin="34,179,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_10" />
+        <Button Content="Add Departmen" HorizontalAlignment="Left" Margin="34,133,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_2"  />
+        <Button Content="Add Faculty" HorizontalAlignment="Left" Margin="34,87,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_3" />
+        <Button Content="Add Group" HorizontalAlignment="Left" Margin="236,225,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_4" />
+        <Button Content="Add Lib" HorizontalAlignment="Left" Margin="236,179,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_5" />
+        <Button Content="Add Press" HorizontalAlignment="Left" Margin="236,133,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_6" />
+        <Button Content="Add S_Card" HorizontalAlignment="Left" Margin="236,87,0,0" VerticalAlignment="Top" Height="41" Width="164" />
+        <Button Content="Add Student" HorizontalAlignment="Left" Margin="236,41,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_7" />
+        <Button Content="Add T_Card" HorizontalAlignment="Left" Margin="34,363,0,0" VerticalAlignment="Top" Height="41" Width="164" />
+        <Button Content="Add Teacher" HorizontalAlignment="Left" Margin="34,317,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_8" />
+        <Button Content="Add Theme" HorizontalAlignment="Left" Margin="34,271,0,0" VerticalAlignment="Top" Height="41" Width="164" Click="Button_Click_9" />
 
     </Grid>
 </Window>

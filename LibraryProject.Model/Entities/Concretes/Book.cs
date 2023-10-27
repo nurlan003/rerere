@@ -26,7 +26,7 @@ namespace LibraryProject.Models.Entities.Concretes
 
         public virtual Press IdPressNavigation { get; set; } = null!;
 
-        public virtual Theme IdThemesNavigation { get; set; } = null!;
+        public virtual Theme? IdThemesNavigation { get; set; } = null!;
 
     }
 }

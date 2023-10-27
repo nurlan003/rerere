@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LibraryProject.Data.Migrations
 {
     [DbContext(typeof(LibraryDbContext))]
-    [Migration("20231027093457_asasas")]
+    [Migration("20231027120931_asasas")]
     partial class asasas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,7 +71,7 @@ namespace LibraryProject.Data.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdThemesNavigationId")
+                    b.Property<int?>("IdThemesNavigationId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ModefiedDate")
@@ -424,9 +424,7 @@ namespace LibraryProject.Data.Migrations
 
                     b.HasOne("LibraryProject.Models.Entities.Concretes.Theme", "IdThemesNavigation")
                         .WithMany("Books")
-                        .HasForeignKey("IdThemesNavigationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("IdThemesNavigationId");
 
                     b.HasOne("LibraryProject.Models.Entities.Concretes.Press", "IdPressNavigation")
                         .WithMany("Books")

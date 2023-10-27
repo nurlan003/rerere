@@ -13,7 +13,7 @@ namespace LibraryProject.Data.Contexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseLazyLoadingProxies()
-                .UseSqlServer("Data Source=STHQ0124-07;Initial Catalog=LibraryDb;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;");
+                .UseSqlServer("Data Source=STHQ0124-07;Initial Catalog=Library2;User ID=admin;Password=admin;Connect Timeout=30;Encrypt=False;");
             base.OnConfiguring(optionsBuilder);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

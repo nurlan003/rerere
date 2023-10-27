@@ -220,7 +220,7 @@ namespace LibraryProject.Data.Migrations
                     PressId = table.Column<int>(type: "int", nullable: false),
                     Comment = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    IdThemesNavigationId = table.Column<int>(type: "int", nullable: false),
+                    IdThemesNavigationId = table.Column<int>(type: "int", nullable: true),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ModefiedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -249,8 +249,7 @@ namespace LibraryProject.Data.Migrations
                         name: "FK_Books_Themess_IdThemesNavigationId",
                         column: x => x.IdThemesNavigationId,
                         principalTable: "Themess",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
